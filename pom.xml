@@ -32,6 +32,7 @@
         <jetbrains-annotation.version>26.0.1</jetbrains-annotation.version>
         <!-- web basic -->
         <springfox.version>3.0.0</springfox.version>
+        <springdoc-openapi-starter-webmvc-ui.version>2.7.0</springdoc-openapi-starter-webmvc-ui.version>
         <!-- data access -->
         <mysql.version>8.0.33</mysql.version>
         <h2.version>2.3.232</h2.version>
@@ -57,6 +58,8 @@
         <apache.poi.version>5.3.0</apache.poi.version>
         <jsoup.version>1.18.3</jsoup.version>
         <oshi.version>6.6.5</oshi.version>
+        <user-agent-utils.version>1.21</user-agent-utils.version>
+        <geoip2.version>4.2.1</geoip2.version>
         <!-- 2. plugins -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
@@ -93,6 +96,11 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-boot-starter</artifactId>
                 <version>${springfox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc-openapi-starter-webmvc-ui.version}</version>
             </dependency>
 
             <!-- data access -->
@@ -211,6 +219,16 @@
                 <groupId>com.github.oshi</groupId>
                 <artifactId>oshi-core</artifactId>
                 <version>${oshi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${user-agent-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.maxmind.geoip2</groupId>
+                <artifactId>geoip2</artifactId>
+                <version>${geoip2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
